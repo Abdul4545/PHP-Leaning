@@ -30,3 +30,36 @@ echo "</br>";
 // PHP Increment / Decrement Operators
 ++$num1;
 --$num2;
+
+
+
+// logocal operators
+
+$a = 10;
+$b = 20;
+$c = 30;
+
+if($a == $b || $a != $c) {
+    echo "something 1";
+}
+
+echo "<br>";
+
+if($a == $b or $a != $c) {
+    echo "something 1";
+}
+
+echo "<br>";
+
+
+
+// ternary operator
+
+$name = "Moid";
+$x = (empty($name)) ? "Yes" : "No";
+echo $x;
+
+echo "<br>";
+
+echo ($a == 10) ? "Yes it is $a " : "No it is not";
+
