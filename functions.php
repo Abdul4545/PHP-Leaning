@@ -1,10 +1,12 @@
 <?php
 
+// Note: A function name must start with a letter or an underscore. Function names are NOT case-sensitive.
 function helloMsg()
 {
     echo "Hello world!";
 }
-helloMsg();
+
+hellomsg();
 echo "<br>";
 
 function sumNumbers(int $a, int $b)
@@ -17,23 +19,23 @@ echo "<br>";
 
 // Call by Value -> the value of a variable is passed directly. This means if the value of a variable within the function is changed, it does not get changed outside of the function
 
-function incr($i)  
-{  
-    $i++;  
-}  
-$i = 5;  
-incr($i);  
-echo $i;  
+function incr($i)
+{
+    $i++;
+}
+$i = 5;
+incr($i);
+echo $i;
 echo "<br>";
 
 // Call by Reference -> the address of a variable (their memory location) is passed. In the case of call by reference, we prepend an ampersand (&) to the argument name in the function definition. Any change in variable value within a function can reflect the change in the original value of a variable.
 
-function incr1(&$i)  
-{  
-    $i++;  
-}  
-$i = 55;  
-incr1($i);  
+function incr1(&$i)
+{
+    $i++;
+}
+$i = 55;
+incr1($i);
 echo $i;
 echo "<br>";
 
@@ -64,3 +66,11 @@ echo "<br>";
 Hello("Lovish");
 echo "<br>";
 
+
+// function addNumbers(int $a, int $b)
+// {
+//     return $a + $b;
+// }
+// echo addNumbers(5, "5 days");
+
+// To specify strict we need to set declare(strict_types=1);. This must be on the very first line of the PHP file.

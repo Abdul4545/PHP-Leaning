@@ -7,6 +7,8 @@
 
 $cars = array("Volvo", "BMW", "Toyota");
 
+echo "<pre>";
+print_r($cars);
 // Access Indexed Arrays
 echo $cars[0];
 echo "<br>";
@@ -103,8 +105,6 @@ $result1 = array(
 );
 
 echo "<br>";
-echo "<br>";
-echo "<br>";
 
 echo "<table border = '2px'>";
 echo "<tr>
@@ -119,3 +119,59 @@ foreach ($result1 as $rows) {
     }
     echo "</tr>";
 }
+
+
+
+// Array methods
+// sort and reverse sort
+
+$nums = [99, 20, 13, 14, 50, 15];
+
+sort($nums);
+print_r($nums);
+
+// rsort($nums);
+// echo "<br>";
+// print_r($nums);
+// echo "<br>";
+
+// push pop shift and unShift
+echo array_push($nums, 44);
+echo "<br>";
+
+echo array_pop($nums);
+echo "<br>";
+
+echo array_shift($nums);
+echo "<br>";
+
+echo array_unshift($nums, 123);
+echo "<br>";
+
+// echo implode(" ", $nums);
+// Returns a string containing a string representation of all the array elements in the same order, with the separator string between each element.
+
+$data = "Hey my name is Abdul Moid";
+
+print_r(explode(" ", $data));
+
+$res =  explode(" ", $data);
+
+print_r($res);
+
+
+
+// merge two arrays and then remove duplicates
+
+function arrayUnion($arr1, $arr2) {
+    $merge = array_merge($arr1, $arr2);
+    $res = array_unique($merge);
+    return $res;
+}
+
+$arr1 = ["red", "green", "yellow"];
+$arr2 = ["red", "pink", "indigo", "green"];
+
+echo "<pre>";
+print_r(arrayUnion($arr1, $arr2));
+
