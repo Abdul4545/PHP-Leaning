@@ -62,6 +62,6 @@ if (mysqli_num_rows($result) > 0) {
                     <td>{$row['class']}</td>
                 </tr>
             </tbody>";
-            $n= $no++;
+            $no++;
     }
 }
