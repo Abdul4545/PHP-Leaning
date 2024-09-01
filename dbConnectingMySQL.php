@@ -10,9 +10,11 @@ echo "Connecting mysql to database <br>";
 $DB_HOST = "localhost";
 $db_username = "root";
 $db_password = ""; // write your mysql password if it is not connecting 
+$database = "dbmoid";
+$port = 3310;
 
 // create a connection
-$conn = mysqli_connect($DB_HOST, $db_username, $db_password);
+$conn = mysqli_connect($DB_HOST, $db_username, $db_password, $database, $port);
 
 if (!$conn) {
     die("Sorry failed to connect". mysqli_connect_error());
