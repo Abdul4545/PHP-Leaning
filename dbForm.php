@@ -46,7 +46,6 @@
             }
 
             else {
-                // echo "<br>Record not inserted because of the error ---> " .mysqli_error($conn);
 
                 echo "<div class='alert alert-secondary alert-dismissible fade show' role='alert'>
                             <strong>Failed</strong>There are some technical issues and Your details have not been submitted!!
@@ -78,7 +77,7 @@
 
     <div class="container mt-3">
         <h1>Please enter your email and password</h1>
-        <form action="/PHP-Learning/dbForm.php" method="post">
+        <form  method="post">
             <div class="mb-3">
                 <label for="email" class="form-label">Email address</label>
                 <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp">
