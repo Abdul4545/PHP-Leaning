@@ -1,0 +1,9 @@
+This is the file1
+This content will be also written along with the previous content
+
+
+This content will be also written along with the previous content whenever the page will be loaded.
+
+This content will be also written along with the previous content whenever the page will be loaded.
+
+This content will be also written along with the previous content whenever the page will be loaded.
