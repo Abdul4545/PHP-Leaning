@@ -1,9 +1,9 @@
 <?php
 
-echo "Form calculator using drop down for operations</br>";
+echo "<h1>Form calculator using drop down for operations</h1></br>";
 
 echo "
-<form method='POST' action='" . $_SERVER['PHP_SELF'] . "'>
+<form method='GET' action='" . $_SERVER['PHP_SELF'] . "'>
     <label for='num1'>First Number: </label>
     <input type='number' name='num1' id='num1' required>
     <br><br>
@@ -26,10 +26,10 @@ echo "
 ";
 
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $num1 = $_POST['num1'];
-    $num2 = $_POST['num2'];
-    $operation = $_POST['operation'];
+if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['num1']) && isset($_GET['num2']) && isset($_GET['operation'])) {
+    $num1 = $_GET['num1'];
+    $num2 = $_GET['num2'];
+    $operation = $_GET['operation'];
 
     if ($operation == "add") {
         $result = $num1 + $num2;
@@ -50,3 +50,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     echo "<h3>Result: $result</h3>";
 }
+
